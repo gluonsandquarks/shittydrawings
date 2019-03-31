@@ -1,5 +1,8 @@
 function setup() {
-  createCanvas(windowWidth/2, windowHeight/2);
+	var cnv = createCanvas(100, 100);
+	var x = (windowWidth - width) / 2;
+ 	var y = (windowHeight - height) /2;
+ 	cnv.position(x, y);
 }
 
 
