@@ -1,6 +1,6 @@
 function setup() {
-	var xlength = 500;
-	var ylenght = 500;
+	var xlength = 1000;
+	var ylenght = 600;
 	var cnv = createCanvas(xlength, ylenght);
 	var x = (windowWidth - width) / 2;
  	var y = (windowHeight - height) /2;
