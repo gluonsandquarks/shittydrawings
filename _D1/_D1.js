@@ -1,9 +1,11 @@
 function setup() {
-	var cnv = createCanvas(100, 100);
+	var xlength = 500;
+	var ylenght = 500;
+	var cnv = createCanvas(xlength, ylenght);
 	var x = (windowWidth - width) / 2;
  	var y = (windowHeight - height) /2;
  	cnv.position(x, y);
-  createCanvas(200, 200);
+  createCanvas(xlength, ylenght);
 }
 
 
