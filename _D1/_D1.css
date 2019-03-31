@@ -1,0 +1,12 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  /* Centrar horizontalmente */
+  justify-content: center;
+  /* Centrar verticalmente */
+  align-items: center;
+}
