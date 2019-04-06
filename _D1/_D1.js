@@ -1,17 +1,24 @@
 function setup() {
-	var xlength = 1000;
+	var xlength = 600;
 	var ylenght = 600;
 	var cnv = createCanvas(xlength, ylenght);
-	var x = (windowWidth - width) / 2;
- 	var y = (windowHeight - height) /2;
- 	cnv.position(x, y);
+ 	cnv.position(0, 0);
  	createCanvas(xlength, ylenght);
  	background('#0f0036');
 }
 
 function draw() {
+	var xmoon = 435;
+	var ymoon = 120;
+	smooth(1000);
 	noStroke();
-	fill(255);
-	ellipse(width/2, height/4, 80, 80);
-
+	fill('#ffff77');
+    ellipse(xmoon, ymoon, 100, 100);
+    smooth(120);
+    noStroke();
+    fill('#eeeeee');
+    x = random(0, 600);
+    y = random(0, 600);
+    z = random(0, 600);
+   	ellipse(x, y, 2, 2);
 }
