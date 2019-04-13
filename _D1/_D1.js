@@ -8,17 +8,26 @@ function setup() {
 }
 
 function draw() {
+
+	//moon
 	var xmoon = 435;
 	var ymoon = 120;
 	smooth(1000);
 	noStroke();
 	fill('#ffff77');
     ellipse(xmoon, ymoon, 100, 100);
-    smooth(120);
-    noStroke();
-    fill('#eeeeee');
-    x = random(0, 600);
-    y = random(0, 600);
-    z = random(0, 600);
-   	ellipse(x, y, 2, 2);
+
+    //stars
+    var star=100;
+
+    while (star == 100) {
+    	smooth(120);
+   		noStroke();
+    	fill('#eeeeee');
+    	x = random(0, 600);
+    	y = random(0, 600);
+    	z = random(0, 600);
+   		ellipse(x, y, 2, 2);
+   	}
+
 }
