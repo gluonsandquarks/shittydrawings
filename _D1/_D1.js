@@ -30,7 +30,16 @@ function draw() {
 		ellipse(x, y, 2, 2);
     }
 
-    //Mountains boy
+    //river (not the eminem song) 
+    beginShape();
+	fill('#54b2a9');
+	vertex(246,440);
+	vertex(500,440);
+	vertex(400,500);
+	vertex(0,500);
+	endShape(CLOSE);
+
+	//Mountains boy
     fill('#005555');
     triangle(80,600,170,350,280,600);
 	fill('#006666');
@@ -39,8 +48,13 @@ function draw() {
 	triangle(-50,600,20,325,200,600);
 	fill('#007777'); 
 	triangle(50,600,200,340,350,600);
-	fill('#009688') 
-	triangle(110,600,200,400,300,600);
-	fill('#008080'); 
+	fill('#008080') 
+	triangle(80,600,180,425,300,600);
+	fill('#009688'); 
 	triangle(0,600,110,380,250,600);
+	fill('#35a79c'); 
+	triangle(150,600,300,480,400,600);
+
+	
+	
 }
