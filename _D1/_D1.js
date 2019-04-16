@@ -10,25 +10,18 @@ function setup() {
 
 function draw() {
 
-	//moon
+    //stars
+ 
+	drawStars(200);
 	noLoop();
+
+	//moon
 	var xmoon = 600;
 	var ymoon = 150;
 	smooth(1000);
 	noStroke();
 	fill('#ffff77');
     ellipse(xmoon, ymoon, 95, 95);
-
-    //stars
-	for (var i = 0; i<=200; i++) {
-
-		x = random(0, 800);
-    	y = random(0, 600);
-    	noSmooth();
-  		noStroke();
-		fill('#eeeeee');	
-		ellipse(x, y, 2, 2);
-    }
 
     //river (not the eminem song) 
     beginShape();
@@ -54,7 +47,16 @@ function draw() {
 	triangle(0,600,110,380,250,600);
 	fill('#35a79c'); 
 	triangle(150,600,300,480,400,600);
+}
 
-	
-	
+function drawStars(stars) {
+	for (var i = 0; i<=stars; i++) {
+		x = random(0, 800);
+    	y = random(0, 600);
+    	noSmooth();
+  		noStroke();
+		fill('#eeeeee');
+		z = random(2);	
+		ellipse(x, y, z, z);
+    }
 }
