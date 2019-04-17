@@ -10,10 +10,15 @@ function setup() {
 
 function draw() {
 
+	var xlength = 800;
+	var ylenght = 600;
+	var cnv = createCanvas(xlength, ylenght);
+ 	cnv.position(0, 0);
+ 	createCanvas(xlength, ylenght);
+ 	background('#0f0036');
+
     //stars
- 
 	drawStars(200);
-	noLoop();
 
 	//moon
 	var xmoon = 600;
