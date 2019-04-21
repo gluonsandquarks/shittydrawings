@@ -19,7 +19,7 @@ function draw() {
 
     //stars
 	drawStars(200);
-
+	noLoop();
 	//moon
 	var xmoon = 600;
 	var ymoon = 150;
